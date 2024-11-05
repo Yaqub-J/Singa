@@ -1,0 +1,61 @@
+📦 e-commerce-platform
+├── 📂 src/
+│   ├── 📂 app/                    # App router directory
+│   │   ├── 📂 (auth)             # Authentication routes group
+│   │   │   ├── login/
+│   │   │   ├── register/
+│   │   │   └── layout.tsx
+│   │   ├── 📂 (shop)             # Main shop routes group
+│   │   │   ├── products/
+│   │   │   ├── categories/
+│   │   │   ├── cart/
+│   │   │   └── checkout/
+│   │   ├── 📂 (dashboard)        # Admin dashboard routes
+│   │   │   ├── admin/
+│   │   │   └── layout.tsx
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── 📂 components/
+│   │   ├── 📂 ui/                # Reusable UI components
+│   │   │   ├── button.tsx
+│   │   │   ├── input.tsx
+│   │   │   └── card.tsx
+│   │   ├── 📂 products/          # Product-related components
+│   │   │   ├── product-card.tsx
+│   │   │   ├── product-grid.tsx
+│   │   │   └── product-search.tsx
+│   │   ├── 📂 cart/              # Cart-related components
+│   │   └── 📂 checkout/          # Checkout components
+│   ├── 📂 lib/
+│   │   ├── 📂 firebase/          # Firebase configuration
+│   │   │   ├── config.ts
+│   │   │   ├── auth.ts
+│   │   │   └── db.ts
+│   │   ├── 📂 stripe/            # Stripe integration
+│   │   │   └── client.ts
+│   │   └── 📂 utils/             # Utility functions
+│   ├── 📂 hooks/                 # Custom React hooks
+│   │   ├── use-auth.ts
+│   │   ├── use-cart.ts
+│   │   └── use-products.ts
+│   ├── 📂 types/                 # TypeScript type definitions
+│   │   ├── product.ts
+│   │   ├── user.ts
+│   │   └── order.ts
+│   ├── 📂 services/              # Business logic and API calls
+│   │   ├── product-service.ts
+│   │   ├── order-service.ts
+│   │   └── user-service.ts
+│   └── 📂 styles/                # Global styles
+├── 📂 public/                    # Static files
+├── 📂 functions/                 # Firebase Cloud Functions
+│   └── src/
+│       ├── auth/
+│       ├── orders/
+│       └── products/
+├── .env.local                    # Environment variables
+├── firebase.json                 # Firebase configuration
+├── next.config.js               
+├── package.json
+├── tailwind.config.js
+└── tsconfig.json
